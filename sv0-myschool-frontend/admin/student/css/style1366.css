@@ -1,5 +1,4 @@
-
-@media only screen and (min-width: 1900px) and (max-width: 1920px) {
+@media only screen and (min-width: 1300px) and (max-width: 1366px) {
     .container{
         position: relative;
         background-color:#EBE3CC;
@@ -10,8 +9,8 @@
         position: absolute;
         width: 160px;
         height: 35px;
-        left:250px;
-        top: 170px;
+        left:190px;
+        top: 120px;
         padding-left: 25px;
         z-index: 1;
         background-color: #E15235;
@@ -27,8 +26,8 @@
         position: absolute;
         width: 222px;
         height: 40px;
-        left: 200px;
-        top: 100px;
+        left: 130px;
+        top: 60px;
         z-index: 1;
         font-family: Rationale;
         font-style: normal;
@@ -42,13 +41,13 @@
     }
     .logo__img{
         position: absolute;
-        left: 100px;
-        top: 58px;
+        left: 30px;
+        top: 18px;
         z-index: 1;
     }
     .menu{
         position: absolute;
-        width: 500px;
+        width: 370px;
         height: 100vh;
         z-index: 0;
 
@@ -78,13 +77,13 @@
     .addUser{
         position: absolute;
         width: 300px;
-        height: 80px;
-        top: 300px;
-        left: 150px;
+        height: 70px;
+        top: 200px;
+        left: 40px;
         z-index: 3;
     }
     .addUser__title{
-        padding-top: 10px;
+        padding-top: calc((70px - 52px)/2);
         padding-left: 90px;
         font-family: Roboto;
         font-style: normal;
@@ -95,20 +94,20 @@
         color: #000000;
     }
     .addUser__logo{
-        margin-top: calc((80px - 47px)/2);
+        margin-top: calc((70px - 47px)/2);
         position: fixed;
         padding-left: 20px;
     }
     .history{
         position: absolute;
-        height: 80px;
+        height: 70px;
         width: 300px;
-        top: 380px;
-        left: 150px;
+        top: 270px;
+        left: 40px;
         z-index: 3;
     }
     .history__title{
-        padding-top: calc((80px - 28px)/2);
+        padding-top: calc((70px - 28px)/2);
         padding-left: 90px;
         font-family: Roboto;
         font-style: normal;
@@ -119,20 +118,20 @@
         color: #000000;
     }
     .history__logo{
-        margin-top: calc((80px - 47px)/2);;
+        margin-top: calc((70px - 47px)/2);;
         position: fixed;
         padding-left: 20px;
     }
     .chart{
         position: absolute;
-        height: 80px;
-        top: 460px;
+        height: 70px;
+        top: 340px;
         width: 300px;
-        left: 150px;
+        left: 40px;
         z-index: 3;
     }
     .chart__title{
-        padding-top: calc((80px - 28px)/2);
+        padding-top: calc((70px - 28px)/2);
         padding-left: 90px;
         font-family: Roboto;
         font-style: normal;
@@ -143,20 +142,20 @@
         color: #000000;
     }
     .chart__logo{
-        margin-top: calc((80px - 47px)/2);
+        margin-top: calc((70px - 47px)/2);
         position: fixed;
         padding-left: 20px;
     }
     .students{
         position: absolute;
-        height: 80px;
-        top: 540px;
+        height: 70px;
+        top: 410px;
         width: 300px;
-        left: 150px;
+        left: 40px;
         z-index: 3;
     }
     .students__title{
-        margin-top: calc((80px - 28px)/2);
+        margin-top: calc((70px - 28px)/2);
         padding-left: 90px;
         font-family: Roboto;
         font-style: normal;
@@ -167,57 +166,57 @@
         color: #000000;
     }
     .students__logo{
-        margin-top: calc((80px - 47px)/2);;
+        margin-top: calc((70px - 47px)/2);;
         position: fixed;
         padding-left: 20px;
     }
     .menu__line5{
-        margin-top: calc((80px - 28px)/2);
+        margin-top: calc((70px - 28px)/2);
         
     }
     .addUsersButton{
         position: absolute;
         background-color: #C8A79E;
-        top: 305px;
-        left: 110px;
-        width: 350px;
-        height: 70px;
+        top: 206px;
+        left: 30px;
+        width: 304px;
+        height: 60px;
         z-index: 1;
         opacity: 0;
     }
     .historyButton{
         position: absolute;
         background-color: #C8A79E;
-        top: 385px;
-        left: 110px;
-        width: 350px;
-        height: 70px;
+        top: 276px;
+        left: 30px;
+        width: 304px;
+        height: 60px;
         z-index: 1;
         opacity: 0;
     }
     .chartButton{
         position: absolute;
         background-color: #C8A79E;
-        top: 465px;
-        left: 110px;
-        width: 350px;
-        height: 70px;
+        top: 346px;
+        left: 30px;
+        width: 304px;
+        height: 60px;
         z-index: 1;
         opacity: 0;
     }
      .studentsButton{
         position: absolute;
         background-color: #C8A79E;
-        top: 546px;
-        left: 110px;
-        width: 350px;
-        height: 70px;
+        top: 416px;
+        left: 30px;
+        width: 304px;
+        height: 60px;
         z-index: 1;
     }
     .settings{
         position: absolute;
-        top: 850px;
-        left:170px;
+        top: 530px;
+        left:60px;
         width: 300px;
     }
     .settings__logo{
@@ -236,9 +235,9 @@
     }
     .out{
         position: absolute;
-        top: 910px;
+        top: 580px;
         width: 300px;
-        left:170px;
+        left:60px;
     }
     .out__logo{
         position: fixed;
@@ -258,8 +257,8 @@
         position: absolute;
         width: 150px;
         height: 45px;
-        left: 650px;
-        top: 150px;
+        left: 420px;
+        top:100px;
 
         font-family: Roboto;
         font-style: normal;
@@ -276,8 +275,8 @@
         position: absolute;
         width: 400px;
         height: 54px;
-        left: 1380px;
-        top: 150px;
+        left: 910px;
+        top: 100px;
         font-size: 28px;
         background: #D1D696;
         padding-left: 60px;
@@ -288,16 +287,16 @@
     }
     .search__logo{
         position: absolute;
-        left: 1380px;
-        top: 153px;
+        left: 910px;
+        top: 103px;
 
     }
     .resultSerch{
         position: absolute;
-        width: 1150px;
-        height: 700px;
-        left: 630px;
-        top: 230px;
+        width: 890px;
+        height: 450px;
+        left: 420px;
+        top: 170px;
 
         border: 1px solid #000000;
         box-sizing: border-box;
@@ -305,10 +304,10 @@
     }
     .result{
         position: relative;
-        margin-top: 20px;
+        margin-top: 10px;
         margin-left: 20px;
-        width: 1100px;
-        height: 100px;
+        width: 850px;
+        height: 60px;
         
         
         border: 1px solid #000000;
@@ -316,21 +315,21 @@
         box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.25);
     }
     .result__logo{
-        margin-top: -5px;
+        margin-top: -15px;
         margin-left: 20px;
-        width: 70px;
-        height: 70px;
+        width: 50px;
+        height: 50px;
         border-radius: 50%;
     }
     .result__titlev1{
-        margin-left: 130px;
-        margin-top: -55px;
+        margin-left: 110px;
+        margin-top: -45px;
         font-size: 28px;
     }
     .result__titlev2{
-        margin-left: 900px;
+        width: 200px;
+        margin-left: 700px;
         margin-top: -30px;
         font-size: 28px;
     }
-
 }
