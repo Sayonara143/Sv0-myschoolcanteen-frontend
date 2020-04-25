@@ -1,7 +1,8 @@
+import * as validPassword  from "./validaition.js";
 $(document).ready(function(){  
     let ticket; 
     $.ajax({ 
-        url: "https://cooperative-universal-homegrown.glitch.me/api/v1/admin/getAllUsers", 
+        url: "https://cooperative-universal-homegrown.glitch.me/api/v1/admin/sync", 
         //dataType: "json", // Для использования JSON формата получаемых данных
        	method: "GET", // Что бы воспользоваться POST методом, меняем данную строку на POST   
         data: {},
@@ -27,12 +28,13 @@ $(document).ready(function(){
         ticket = 'paid';
     });
     $('.button').on('click', function() {
+        if(validPassword.validPassword() & validPassword.validPasswordLenght()&validPassword.validDataLenght()){
         let surname = $('.surname').val();
         let name = $('.name').val();
         let patronymic = $('.patronimyc').val();
         let login = $('.login').val();
         let numberPhone = $('.numberPhone').val();
-        let password = $('.password').val();
+        let password = $('.password1').val();
         $.ajax({ 
             url: "https://cooperative-universal-homegrown.glitch.me/api/v1/admin/createUser", 
             //dataType: "json", // Для использования JSON формата получаемых данных
@@ -53,13 +55,16 @@ $(document).ready(function(){
             },
             error: function (jqXHR,  textStatus, errorThrown){
                 if(jqXHR.status == 404){
-                    alert('Ошибка');
-                    
+                    alert('Ошибка');   
+                }
+                if(jqXHR.status == 500){
+                    alert('неверно введены данные');  
                 }
                 
             }
             
         });
+    }
     })
 
 }); 

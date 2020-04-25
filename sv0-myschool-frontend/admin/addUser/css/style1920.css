@@ -481,6 +481,7 @@
     }
     .button:hover{
         background-color: rgb(199, 206, 129);
+        pointer-events: auto;
     }
     .buttonTitle{position: fixed;
         margin-top: 12px;
