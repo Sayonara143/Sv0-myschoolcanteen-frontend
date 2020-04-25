@@ -20,17 +20,14 @@ function validPasswordLenght(boolean){
     return boolean;
    
 }
-let surname = $('.surname').val();
-let name = $('.name').val();
-let patronymic = $('.patronimyc').val();
-let login = $('.login').val();
-let numberPhone = $('.numberPhone').val();
-function validDataLenght(boolean){  
-    let s = 1<($('.surname').val())
-    let n = 1<$('.name').val();
-    let p = 1<$('.patronimyc').val();
-    let l = 1<$('.login').val();
-    let nP = 11<$('.numberPhone').val();
+
+function validDataLenght(boolean){ 
+    let s,n,p,l,nP = false; 
+    s = 1<($('.surname').val()).length;
+    n = 1<($('.name').val()).length;
+    p = 1<($('.patronimyc').val()).length;
+    l = 1<($('.login').val()).length;
+    nP = (11 == ($('.numberPhone').val()).length);
     boolean = true
     if(!(s&n&p&l&nP)){
         boolean = false;

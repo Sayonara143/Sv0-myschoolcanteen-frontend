@@ -41,7 +41,7 @@ body{
 *, *::before, *::after{
     box-sizing: inherit;
 }
-@media screen and (max-width: 1536px) {
+@media only screen and (min-width: 1441px) and (max-width: 1536px) {
     .container{
         position: relative;
         background-color:#EBE3CC;

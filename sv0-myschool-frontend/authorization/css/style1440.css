@@ -42,7 +42,7 @@ body{
 *, *::before, *::after{
     box-sizing: inherit;
 }
-@media screen and (max-width: 1440px) {
+@media only screen and (min-width: 1368px) and (max-width: 1440px) {
     .container{
         position: relative;
         background-color:#EBE3CC;
@@ -99,10 +99,10 @@ body{
     }
     .button{
         position: absolute;
-        left: 41.11%;
-        right: 39.72%;
-        top: 64.45%;
-        bottom: 29.49%;
+        width: 276px;
+        height: 62px;
+        left: calc((100vw - 276px)/2);;
+        top: 510px;
 
         background: linear-gradient(180deg, #FFC700 0%, #FFB039 100%);
         box-shadow: 0px 5px 5px rgba(243, 209, 38, 0.25);
