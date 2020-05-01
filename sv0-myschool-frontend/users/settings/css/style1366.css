@@ -44,7 +44,7 @@
       margin-left: 10px;
     }
     .number2{
-      margin-left: 10px;
+      margin-left: 400px;
       position: fixed;
       font-family: Roboto;
       font-style: normal;
@@ -95,6 +95,22 @@
       margin-top: 40px;
       position: relative;
     }
+    .changeName__value{
+      position: relative;
+      margin-top: 40px;
+    }
+    .changeEmail__value{
+      margin-top: 40px;
+      position: relative;
+    }
+    .changePhone__value{
+      margin-top: 40px;
+      position: relative;
+    }
+    .changePassword__value{
+      margin-top: 40px;
+      position: relative;
+    }
     .changeName__button{
       margin-top: 40px;
       position: relative;
@@ -122,9 +138,9 @@
     }
     .img__avatar{
       position: absolute;
-      background-color:blue;
       width: 200px;
       height: 200px;
+      border-radius: 50%;
     }
     .textDelete{
       position: fixed;

@@ -9,10 +9,10 @@ $(document).ready(function(){
         success: function (data){
             console.log(data);
             url_image = "https://cooperative-universal-homegrown.glitch.me/"+ data.path;
-            $(".changeName__value").text(data.balance);
-            $(".changeEmail__value").text(data.balance);
-            $(".changePhone__value").text(data.balance);
-            $(".changePassword__value").text(data.surname +" "+ data.name + " " + data.patronimyc);	
+            $(".changeName__value").text(data.surname +" "+ data.name + " " + data.patronymic);
+            $(".changeEmail__value").text(data.email);
+            $(".changePhone__value").text(data.phone);
+            $(".changePassword__value").text("*****");	
             $(".img__avatar").attr("src", url_image);   
         },
         error: function (jqXHR,  textStatus, errorThrown){

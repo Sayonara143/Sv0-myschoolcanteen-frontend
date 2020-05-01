@@ -6,7 +6,7 @@ console.log($("#student").val());
     $('#student').click( function() {  
         $('#teacher').prop('checked', false);
         url = "https://cooperative-universal-homegrown.glitch.me/api/v1/oauth/tokens/users"
-        href =  '../../users/balance/index.html'
+        href =  '../users/balance/index.html'
     } ); 
     $('#teacher').click(function() {  
         $('#student').prop('checked', false);
