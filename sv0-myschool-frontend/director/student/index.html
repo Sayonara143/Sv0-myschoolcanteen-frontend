@@ -6,6 +6,8 @@
     <title>Ученики</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="../css/css1366Menu.css">
+    <link rel="stylesheet" href="../css/css1536Menu.css">
+    <link rel="stylesheet" href="../css/css1920Menu.css">
     <link rel="stylesheet" href="./css/style1366.css">
     <link rel="stylesheet" href="./css/style1440.css">
     <link rel="stylesheet" href="./css/style1536.css">
@@ -14,6 +16,10 @@
     <script src="./js/buttonClick.js"></script>
     <script src="./js/load.js"></script>
     <script src="../js/click.js"></script>
+    <script src="./js/changeStatus.js"></script>
+    <!-- <script src="./js/summaFree.js"></script> -->
+    <!-- <script src="./js/summaPay.js"></script> -->
+    <script type="module" src="./js/load.js"></script>
 </head>
 <body>
     <div class="container">
@@ -35,6 +41,7 @@
                     <img class="menu__line5"src="./image/svg/Line 1.svg" alt="">
                 </div>
                 <div class="studentsButton"></div>
+
                 <div class="settings"> 
                     <img src="./image/svg/settings.svg" alt="" class="settings__logo">
                     <div class="settings__title">Настройки</div>
@@ -45,6 +52,47 @@
                     <div class="out__title">Выход</div>
                 </div>
                 <div class="outButton"></div>
+            </div>
+        </div>
+        <div class="rightBlock">
+            <select id="changeClass" class="changeClass">
+
+            </select>
+            <div class="block">
+                <div class="pay ">
+                    <div class="boxPay"></div>
+                    <div class="textPay">Платнки(кол-во)</div>
+                </div>
+                <div class="free">
+                    <div class="boxFree"></div>
+                    <div class="textFree">Бесплатники(кол-во)</div>
+                </div>
+            </div>
+            <div class="table">
+                <div class="one text width">
+                    <div class="titleOne">Ученик</div>
+                </div>
+                <div class="table__line1" src=""></div>
+                <div class="two text width">
+                    <div class="titleTwo">Счет</div>
+                </div>
+                <div class="table__line2" src=""></div>
+                <div class="three text width">
+                    <div class="titleThree">Ест/Не ест</div>
+                </div>
+            </div>
+            <div class="tablePay">
+                <div class="onePay">
+                    <div class="titleOnePay">Ученик</div>
+                </div>
+                <div class="table__line1Pay" src=""></div>
+                <div class="twoPay">
+                    <div class="titleTwoPay">Счет</div>
+                </div>
+                <div class="table__line2Pay" src=""></div>
+                <div class="threePay">
+                    <div class="titleThreePay">Ест/Не ест</div>
+                </div>
             </div>
         </div>
     </div>

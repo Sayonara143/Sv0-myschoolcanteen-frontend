@@ -9,6 +9,7 @@ $(document).ready(function(){
             $('.titleStatusTwo').css('opacity', 1);
             $('.blockPay').css('opacity',1) ;
             $('.buttonPaySave').css('opacity',1) ;
+            $('.buttonPaySave').css('pointer-events', "auto");
             
 
         }
@@ -17,9 +18,11 @@ $(document).ready(function(){
             $('.titleStatusTwo').css('opacity', 0);
             $('.blockPay').css('opacity',0) ;
             $('.buttonPaySave').css('opacity',0) ;
+            $('.buttonPaySave').css('pointer-events', "none");
             $('.titleStatusOne').css('opacity', 1) ;
             $('.blockFree').css('opacity', 1);
             $('.buttonFreeSave').css('opacity',1) ;
+            $('.buttonFreeSave').css('pointer-events', "auto");
         }
     })
     $(".rigth").on('click', function(){
@@ -31,12 +34,14 @@ $(document).ready(function(){
             $('.titleStatusTwo').css('opacity', 1);
             $('.blockPay').css('opacity', 1) ;
             $('.buttonPaySave').css('opacity',1) ;
+            $('.buttonPaySave').css('pointer-events', "auto");
         }
         else{
             flag = !flag;
             $('.titleStatusTwo').css('opacity',0);
             $('.blockPay').css('opacity', 0) ;
             $('.buttonPaySave').css('opacity',0) ;
+            $('.buttonPaySave').css('pointer-events', "none");
             $('.titleStatusOne').css('opacity', 1) ;
             $('.blockFree').css('opacity', 1);
             $('.buttonFreeSave').css('opacity',1) ;

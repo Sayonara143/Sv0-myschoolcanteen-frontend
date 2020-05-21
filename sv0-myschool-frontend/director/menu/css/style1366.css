@@ -293,15 +293,9 @@
     .td{
         border: 1px solid black;
     }
-    .blockPayTable{
-        position: absolute;
-        margin-top: 100px;
-        margin-left: 420px;
-        height: 350px;
-        width: 880px;
-        border: 1px solid black;
-        border-collapse:collapse;
-    } 
+    .rightBlockTwo{
+        display: none;
+    }
     .changeStatus{
         position: absolute;
         width: 200px;
@@ -440,6 +434,7 @@
         opacity: 0;
         margin-top: 500px;
         margin-left: 1100px;
+        pointer-events: none;
 
         cursor: pointer;
         border-radius: 50px;

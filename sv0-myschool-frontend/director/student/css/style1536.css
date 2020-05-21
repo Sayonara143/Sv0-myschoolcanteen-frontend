@@ -48,183 +48,105 @@ body{
         width: 100%;
         height: 100vh;
     }
-    .password{
-        position: absolute;
-        width: 470px;
-        height: 47px;
-        left: calc((100vw - 470px)/2);;
-        top: 410px;
-
-        background: #EBE3CC;
-        border: 1px solid #423838;
-        box-sizing: border-box;
-        border-radius: 10px;
+    
+    .studentsButton{
+        opacity: 1;
     }
-    .login{
-        position: absolute;
-        width: 470px;
-        height: 47px;
-        left: calc((100vw - 470px)/2);;
-        top: 350px;
-        z-index: 1;
-        background: #EBE3CC;
-        border: 1px solid #515050;
-        box-sizing: border-box;
-        border-radius: 10px;
+    .menuButton{
+        opacity: 0;
     }
-    .login__header{
+    .settingsButton{
+        opacity: 0;
+    }
+    .outButton{
+        opacity: 0;
+    }
+    .rightBlock{
         position: absolute;
-        width: 73px;
-        height: 22px;
-        left: 560px;
-        top: 365px;
-        z-index: 2;
-        font-family: Montserrat;
+        width: 850px;
+        height: 540px;
+        margin-left: 420px;
+        margin-top: 80px;
+    }
+    .table{
+        position: relative;
+        display: inline-flex;
+        width: 870px;
+        height: 570px;
+        border: 2px solid black;
+    }
+    .tablePay{
+        display: none;
+    }
+    .text{
+        font-family: Roboto;
         font-style: normal;
         font-weight: normal;
-        font-size: 16px;
-        line-height: 20px;
-
-        color: #231D1D;
+        font-size: 20px;
+        line-height: 35px;
     }
-    .password__header{
-        position: absolute;
-        width: 74px;
-        height: 22px;
-        left: 560px;
-        top: 425px;
-
-        font-family: Montserrat;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 16px;
-        line-height: 20px;
-
-        color: #231D1D;
+    .table__line1{
+        z-index: 1000;
+        width: 1px;
+        height: 568px;
+        border: 1px solid black;
     }
-    .button__header{
-        position: absolute;
-        width: 145px;
-        height: 24px;
-        left: calc((100vw - 145px)/2);;
-        top: 529px;
-
-        font-family: Montserrat;
-        font-style: normal;
-        font-weight: 800;
-        font-size: 18px;
-        line-height: 22px;
+    .table__line2{
+        z-index: 1000;
+        width: 1px;
+        height: 568px;
+        border: 1px solid black;
+    }
+    .width{
+        border-bottom: 2px solid black;
         text-align: center;
-
-        color: #242424;
+        height: 35px;
+        width: 290px;
     }
-    .button{
+    .changeClass{
         position: absolute;
-        width: 276px;
-        height: 62px;
-        left: calc((100vw - 276px)/2);;
-        top: 510px;
+        width: 200px;
+        height: 40px;
+        margin-left: 890px;
 
-        background: linear-gradient(180deg, #FFC700 0%, #FFB039 100%);
-        box-shadow: 0px 5px 5px rgba(243, 209, 38, 0.25);
-        border-radius: 5px;
-    }
-    .wrapper{
-        z-index: 0;
-        position: absolute;
-        margin-left: calc((100vw - 606px)/2);
-        margin-top: calc((100vh - 394px)/2 + 57px);
-        width: 606px;
-        height: 394px;
-        background-color: #fbf5e5;
-        box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.39); ;
-        border-radius: 23px;
-    }
-    .wrapper__title{
-        position: absolute;
-        width: 394px;
-        height: 110px;
-        margin-left: calc((100vw - 394px)/2);
-        margin-top: 131px;
+        background-color: #D1D696;
 
-        font-family: Rationale;
+        font-family: Roboto;
         font-style: normal;
         font-weight: normal;
-        font-size: 96px;
-        line-height: 110px;
-        
-        z-index: 1;
+        font-size: 20px;
+        line-height: 35px;
+
+        color: #000000;
+        box-shadow: 0px 4px 12px #423838;
     }
-    .header{
+    .block{
         position: absolute;
-        width: 268px;
-        height: 35px;
-        left: calc((100vw - 268px)/2);
-        top: 250px;
-        z-index: 1;
-
-       
-        font-family: Montserrat;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 36px;
-        line-height: 44px;
-        color: #2D2727;
+        width: 200px;
+        margin-top: 100px;
+        margin-left: 890px;
     }
-    .student__check{
+    .boxPay{
+        position: fixed;
+        width: 30px;
+        height: 30px;
+        background-color: #EEA38D;
+    }
+
+    .boxFree{
+        margin-top: 20px;
+        position: fixed;
+        width: 30px;
+        height: 30px;
+        background-color: white;
+    }
+    .textPay{
+        padding-top: 5px;
+        margin-left: 40px;
+    }
+    .textFree{
         position: absolute;
-        width: 18px;
-        height: 18px;
-        left: 780px;
-        top: 575px;
-        z-index: 2;
-        /* font-family: Montserrat;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 36px;
-        line-height: 44px;
-        color: #2D2727; */
-
-    }
-    .teacher__check{
-        position: absolute;
-        width: 18px;
-        height: 18px;
-        left: 1050px;
-        top: 575px;
-        z-index: 2;
-
-        /* font-family: Montserrat;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 36px;
-        line-height: 44px;
-        color: #2D2727; */
-
-    }
-    .teacher__title{
-        position: absolute;
-        width: 18px;
-        height: 18px;
-        left: 1090px;
-        top: 565px;
-        z-index: 2;
-
-        font-family: Montserrat;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 19px;
-        line-height: 44px;
-        color: #2D2727;
-    }
-    .student__title
-    {
-        width: 18px;
-        height: 18px;
-        left: 820px;
-        top: 565px;
-        z-index: 2;
-        font-size: 19px;
-        line-height: 44px;
+        margin-top: 25px;
+        margin-left: 40px;
     }
 }

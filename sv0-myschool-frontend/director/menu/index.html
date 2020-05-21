@@ -6,6 +6,8 @@
     <title>Меню</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="../css/css1366Menu.css">
+    <link rel="stylesheet" href="../css/css1536Menu.css">
+    <link rel="stylesheet" href="../css/css1920Menu.css">
     <link rel="stylesheet" href="./css/style1366.css">
     <link rel="stylesheet" href="./css/style1440.css">
     <link rel="stylesheet" href="./css/style1536.css">
@@ -15,8 +17,9 @@
     <script src="./js/load.js"></script>
     <script src="../js/click.js"></script>
     <script src="./js/changeStatus.js"></script>
-    <script src="./js/summaFree.js"></script>
-    <script src="./js/summaPay.js"></script>
+    <!-- <script src="./js/summaFree.js"></script> -->
+    <!-- <script src="./js/summaPay.js"></script> -->
+    <script type="module" src="./js/load.js"></script>
 </head>
 <body>
     <div class="container">
@@ -58,9 +61,9 @@
                 <div class="titleStatusOne">Бесплатники</div>
                 <div class="titleStatusTwo">Платники</div>
             </div>
-            <select class="change" >выбрать класс
-                <option value="">fre</option>
-                <option value="5б">5б</option>
+            <select class="change" id="class" >выбрать класс
+                <option value="sveta">10А</option>
+                <option value="Olga">5б</option>
             </select>
             <div class="blockFree">
                 <div class="blockFreeTable text">
@@ -127,6 +130,80 @@
                     </div>
                 </div>
                 <div class="buttonPaySave">Сохранить</div>
+            </div>
+        </div>
+        <div class="rightBlockTwo"> 
+            <div class="titleStatusOne1920">Бесплатники</div>
+            <div class="titleStatusTwo1920">Платники</div>
+            <select class="change1920" id="class" >выбрать класс
+                <option value="sveta">10А</option>
+                <option value="Olga">5б</option>
+            </select>
+            <div class="blockFree1920">
+                <div class="blockFreeTable1920 text1920">
+                    <div class="colOne1920 tr1920">
+                        <div class="rowOneColOne1920 td1920"></div>
+                        <div class="rowTwoColOne1920 td1920">День недели</div>
+                        <div class="rowThreeColOne1920 td1920"></div>
+                        <div class="rowFourColOne1920 td1920"></div>
+                    </div>
+                    <div class="colTwo1920 tr1920">
+                        <input type="date" class="rowOneColTwo1920 td1920" >
+                        <div class="rowTwoColTwo1920 td1920">Меню</div>
+                        <input type="text" class="rowThreeColTwo1920 td1920" placeholder="Блюдо">
+                        <input type="text" class="rowFourColTwo1920 td1920" placeholder="Блюдо">
+                        <input type="text" class="rowFiveColTwo1920 td1920" placeholder="Блюдо">
+                        <input type="text" class="rowSixColTwo1920 td1920" placeholder="Блюдо">
+                        <input type="text" class="rowSevenColTwo1920 td1920" placeholder="Блюдо">
+                        <input type="text" class="rowEightColTwo1920 td1920" placeholder="Блюдо">
+                        <div class="rowNineColTwo1920 td1920">Общая стоимость обеда:</div>
+                    </div>
+                    <div class="colThree1920 tr1920">
+                        <div class="rowOneColThree1920 td1920"></div>
+                        <div class="rowTwoColThree1920 td1920">Граммы/Цена</div>
+                        <input type="text" class="rowThreeColThree1920 td1920" id='oneFree1920'placeholder="Граммы/Цена">
+                        <input type="text" class="rowFourColThree1920 td1920" id='twoFree1920' placeholder="Граммы/Цена">
+                        <input type="text" class="rowFiveColThree1920 td1920" id='threeFree1920'placeholder="Грамма/Цена">
+                        <input type="text" class="rowSixColThree1920 td1920" id='fourFree1920'placeholder="Граммы/Цена">
+                        <input type="text" class="rowSevenColThree1920 td1920" id='fiveFree1920'placeholder="Граммы/Цена">
+                        <input type="text" class="rowEightColThree1920 td1920" id='sixFree1920'placeholder="Граммы/Цена">
+                        <div class="rowNineColThree1920 td1920" id="freeid1920"></div>
+                    </div>
+                </div>
+                <div class="buttonFreeSave1920">Сохранить</div>
+            </div>
+            <div class="blockPay1920">
+                <div class="blockPayTable1920 text1920">
+                    <div class="colOne1920 tr1920">
+                        <div class="rowOneColOne1920 td1920"></div>
+                        <div class="rowTwoColOne1920 td1920">День недели</div>
+                        <div class="rowThreeColOne1920 td1920"></div>
+                        <div class="rowFourColOne1920 td1920"></div>
+                    </div>
+                    <div class="colTwo1920 tr1920">
+                        <input type="date" class="rowOneColTwo1920 td1920" >
+                        <div class="rowTwoColTwo1920 td1920">Меню</div>
+                        <input type="text" class="rowThreeColTwo1920 td1920" placeholder="Блюдо">
+                        <input type="text" class="rowFourColTwo1920 td1920" placeholder="Блюдо">
+                        <input type="text" class="rowFiveColTwo1920 td1920" placeholder="Блюдо">
+                        <input type="text" class="rowSixColTwo1920 td1920" placeholder="Блюдо">
+                        <input type="text" class="rowSevenColTwo1920 td1920" placeholder="Блюдо">
+                        <input type="text" class="rowEightColTwo1920 td1920" placeholder="Блюдо">
+                        <div class="rowNineColTwo1920 td1920">Общая стоимость обеда:</div>
+                    </div>
+                    <div class="colThree1920 tr1920">
+                        <div class="rowOneColThree1920 td1920"></div>
+                        <div class="rowTwoColThree1920 td1920">Граммы/Цена</div>
+                        <input type="text" class="rowThreeColThree1920 td1920" id='onePay1920'placeholder="Граммы/Цена">
+                        <input type="text" class="rowFourColThree1920 td1920" id='twoPay1920' placeholder="Граммы/Цена">
+                        <input type="text" class="rowFiveColThree1920 td1920" id='threePay1920'placeholder="Грамма/Цена">
+                        <input type="text" class="rowSixColThree1920 td1920" id='fourPay1920'placeholder="Граммы/Цена">
+                        <input type="text" class="rowSevenColThree1920 td1920" id='fivePay1920'placeholder="Граммы/Цена">
+                        <input type="text" class="rowEightColThree1920 td1920" id='sixPay1920'placeholder="Граммы/Цена">
+                        <div class="rowNineColThree1920 td1920" id="Payid1920"></div>
+                    </div>
+                </div>
+                <div class="buttonPaySave1920">Сохранить</div>
             </div>
         </div>
     </div>

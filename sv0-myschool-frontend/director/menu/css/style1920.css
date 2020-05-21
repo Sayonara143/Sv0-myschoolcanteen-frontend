@@ -6,331 +6,430 @@
         width: 100%;
         height: 100vh;
     }
-    .teacher__logo{
+    .studentsButton{
+        opacity: 0;
+    }
+    .menuButton{
+        opacity: 1;
+    }
+    .settingsButton{
+        opacity: 0;
+    }
+    .outButton{
+        opacity: 0;
+    }
+    .rightBlock{
+        display: none;
+    }
+    /* rigthBlockTwo */
+    .change1920{
         position: absolute;
-        width: 160px;
+        margin-left: 1440px;
+        margin-top: 30px;
+        width: 220px;
         height: 35px;
-        left:250px;
-        top: 170px;
-        padding-left: 25px;
-        z-index: 1;
-        background-color: #E15235;
+        background-color: #D1D696;
+
         font-family: Roboto;
         font-style: normal;
         font-weight: normal;
-        font-size: 30px;
+        font-size: 20px;
         line-height: 35px;
 
         color: #000000;
-    }
-    .logo__title{
-        position: absolute;
-        width: 222px;
-        height: 40px;
-        left: 200px;
-        top: 100px;
-        z-index: 1;
-        font-family: Rationale;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 50px;
-        line-height: 58px;
-
-        color: #000000;
-
-        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    }
-    .logo__img{
-        position: absolute;
-        left: 100px;
-        top: 58px;
-        z-index: 1;
-    }
-    .menu{
-        position: absolute;
-        width: 500px;
-        height: 100vh;
-        z-index: 0;
-
-        background: #EBE3CC;
-        box-shadow: 0px 4px 25px #695D55;
-    }
-    .menu__line1{
-        position: absolute;
-        z-index: 2;
-    }
-    .menu__line2{
-        position: absolute;
-        z-index: 2;
-    }
-    .menu__line3{
-        position: absolute;
-        z-index: 2;
-    }
-    .menu__line4{
-        position: absolute;
-        z-index: 2;
-    }
-    .menu__line5{
-        position: absolute;
-        z-index: 2;
-    }
-    .addUser{
-        position: absolute;
-        width: 300px;
-        height: 80px;
-        top: 300px;
-        left: 150px;
-        z-index: 3;
-    }
-    .addUser__title{
-        padding-top: 10px;
-        padding-left: 90px;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 26px;
-        line-height: 28px;
-
-        color: #000000;
-    }
-    .addUser__logo{
-        margin-top: calc((80px - 47px)/2);
-        position: fixed;
-        padding-left: 20px;
-    }
-    .history{
-        position: absolute;
-        height: 80px;
-        width: 300px;
-        top: 380px;
-        left: 150px;
-        z-index: 3;
-    }
-    .history__title{
-        padding-top: calc((80px - 28px)/2);
-        padding-left: 90px;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 28px;
-        line-height: 28px;
-
-        color: #000000;
-    }
-    .history__logo{
-        margin-top: calc((80px - 47px)/2);;
-        position: fixed;
-        padding-left: 20px;
-    }
-    .chart{
-        position: absolute;
-        height: 80px;
-        top: 460px;
-        width: 300px;
-        left: 150px;
-        z-index: 3;
-    }
-    .chart__title{
-        padding-top: calc((80px - 28px)/2);
-        padding-left: 90px;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 28px;
-        line-height: 28px;
-
-        color: #000000;
-    }
-    .chart__logo{
-        margin-top: calc((80px - 47px)/2);
-        position: fixed;
-        padding-left: 20px;
-    }
-    .students{
-        position: absolute;
-        height: 80px;
-        top: 540px;
-        width: 300px;
-        left: 150px;
-        z-index: 3;
-    }
-    .students__title{
-        margin-top: calc((80px - 28px)/2);
-        padding-left: 90px;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 28px;
-        line-height: 28px;
-
-        color: #000000;
-    }
-    .students__logo{
-        margin-top: calc((80px - 47px)/2);;
-        position: fixed;
-        padding-left: 20px;
-    }
-    .menu__line5{
-        margin-top: calc((80px - 28px)/2);
-        
-    }
-    .addUsersButton{
-        position: absolute;
-        background-color: #C8A79E;
-        top: 305px;
-        left: 110px;
-        width: 350px;
-        height: 70px;
-        z-index: 1;
-        opacity: 0;
-    }
-    .historyButton{
-        position: absolute;
-        background-color: #C8A79E;
-        top: 385px;
-        left: 110px;
-        width: 350px;
-        height: 70px;
-        z-index: 1;
-        opacity: 0;
-    }
-    .chartButton{
-        position: absolute;
-        background-color: #C8A79E;
-        top: 465px;
-        left: 110px;
-        width: 350px;
-        height: 70px;
-        z-index: 1;
-        opacity: 0;
-    }
-     .studentsButton{
-        position: absolute;
-        background-color: #C8A79E;
-        top: 546px;
-        left: 110px;
-        width: 350px;
-        height: 70px;
-        z-index: 1;
-    }
-    .settings{
-        position: absolute;
-        top: 850px;
-        left:170px;
-        width: 300px;
-    }
-    .settings__logo{
-        position: fixed;
-    }
-    .settings__title{
-        margin-top: 10px;
-        margin-left: 65px;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 28px;
-        line-height: 28px;
-
-        color: #000000;
-    }
-    .out{
-        position: absolute;
-        top: 910px;
-        width: 300px;
-        left:170px;
-    }
-    .out__logo{
-        position: fixed;
-    }
-    .out__title{
-        margin-top: 10px;
-        margin-left: 65px;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 28px;
-        line-height: 28px;
-
-        color: #000000;
-    }
-    .rightBlock__title{
-        position: absolute;
-        width: 150px;
-        height: 45px;
-        left: 650px;
-        top: 150px;
-
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 38px;
-        line-height: 45px;
-        /* identical to box height */
-
-        text-align: center;
-
-        color: #000000;
-    }
-    .search{
-        position: absolute;
-        width: 400px;
-        height: 54px;
-        left: 1380px;
-        top: 150px;
-        font-size: 28px;
-        background: #D1D696;
-        padding-left: 60px;
-        box-sizing: border-box;
-        border: 1px solid #515050;
         box-shadow: 0px 4px 12px #423838;
-        border-radius: 10px;
     }
-    .search__logo{
-        position: absolute;
-        left: 1380px;
-        top: 153px;
 
-    }
-    .resultSerch{
+    .blockFreeTable1920{
         position: absolute;
-        width: 1150px;
-        height: 700px;
-        left: 630px;
-        top: 230px;
-
-        border: 1px solid #000000;
-        box-sizing: border-box;
-        box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.25);
+        margin-top: 90px;
+        
+        margin-left: 660px;
+        height: 358px;
+        width: 1000px;
+        /* border: 1px solid black; */
+        display: inline-flex;
+        padding: 0;
+        
+    } 
+    .blockPayTable1920{
+        position: absolute;
+        margin-top: 530px;
+        margin-left: 660px;
+        height: 358px;
+        width: 1000px;
+        /* border: 1px solid black; */
+        display: inline-flex;
+        padding: 0;
+        
+    } 
+    .colOne1920{
+        display: inline-block;
+        width: 150px;
+        height: 30px;
     }
-    .result{
+    .colTwo1920{
+        display: inline-block;
+        width: 650px;
+        height: 350px;
+    }
+    .colThree1920{
+        display: inline-block;
+        height: 350px;
+        width: 200px;
+        	
+    }
+    /* Первая колонка (строчки) */
+    .rowOneColOne1920{
+        background-color: #EFDDB9;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 150px; 
+        height: 40px;
+    }
+    .rowTwoColOne1920{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 150px; 
+        height: 40px;
+    }
+    .rowThreeColOne1920{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 150px; 
+        height: 240px;
+    }
+    .rowFourColOne1920{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 150px; 
+        height: 40px;
+        background-color: #EFDDB9;
+    }
+    /* Вторая колонка (строчки) */
+    .rowOneColTwo1920{
+        padding-left: 150px;
         position: relative;
-        margin-top: 20px;
-        margin-left: 20px;
-        width: 1100px;
-        height: 100px;
+        background-color: #EFDDB9;
+        display:flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 650px; 
+        height: 40px;
+        z-index: 7;
+    }
+    .rowTwoColTwo1920{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 650px; 
+        height: 40px;
+        z-index: 7;
         
+        padding-left: 240px;
+    }
+    .rowThreeColTwo1920{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 650px; 
+        height: 40px;
+        z-index: 3;
+    }
+    .rowFourColTwo1920{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 650px; 
+        height: 40px;
+        z-index: 3;
+    }
+    .rowFiveColTwo1920{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 650px; 
+        height: 40px;
+        z-index: 3;
+    }
+    .rowSixColTwo1920{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 650px; 
+        height: 40px;
+        z-index: 3;
+    }
+    .rowSevenColTwo1920{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 650px; 
+        height: 40px;
+        z-index: 3;
         
-        border: 1px solid #000000;
-        box-sizing: border-box;
-        box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.25);
+
     }
-    .result__logo{
-        margin-top: -5px;
-        margin-left: 20px;
-        width: 70px;
-        height: 70px;
-        border-radius: 50%;
+    .rowEightColTwo1920{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 650px; 
+        height: 40px;
+        z-index: 3;
+        
     }
-    .result__titlev1{
-        margin-left: 130px;
-        margin-top: -55px;
-        font-size: 28px;
+    .rowNineColTwo1920{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 650px; 
+        height: 40px;
+        background-color: #EFDDB9;
+        padding-left: 385px;
+        
     }
-    .result__titlev2{
-        margin-left: 900px;
-        margin-top: -30px;
-        font-size: 28px;
+    /* Третья колонка (строчка) */
+    .rowOneColThree1920{
+
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 200px; 
+        height: 40px;
+        background-color: #EFDDB9;
+    }
+    .rowTwoColThree1920{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 200px; 
+        height: 40px;
+        text-align: center;
+    }
+    .rowThreeColThree1920{
+        position: relative;
+        z-index: 3;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 200px; 
+        height: 40px;
+    }
+    .rowFourColThree1920{
+        position: relative;
+        z-index: 3;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 200px; 
+        height: 40px;
+    }
+    .rowFiveColThree1920{
+        position: relative;
+        z-index: 3;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 200px; 
+        height: 40px;
+    }
+    .rowSixColThree1920{
+        position: relative;
+        z-index: 3;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 200px; 
+        height: 40px;
+    }
+    .rowSevenColThree1920{
+        position: relative;
+        z-index: 3;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 200px; 
+        height: 40px;
+        
+    }
+    .rowEightColThree1920{
+        position:relative;
+        z-index: 3;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 200px; 
+        height: 40px;
+        
+    }
+    .rowNineColThree1920{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 200px; 
+        height: 40px;
+        background-color: #EFDDB9;
+        padding-left: 10px;
+    }
+    .tr1920{
+        /* border-top: 1px solid black; */
+        border-bottom: 1px solid black;
+        
+
+    }
+    .td1920{
+        border: 1px solid black;
     }
 
+
+    .titleStatusOne1920{
+        transform: rotate(270deg);
+        position: absolute;
+        margin-top: 240px;
+        margin-left: 410px;
+        width: 300px;
+        height: 50px;
+        text-align: center;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 32px;
+        line-height: 35px;
+        
+        color: #000000;
+        border-radius: 50px;
+        background-color: #D1D696;
+        text-align: center;
+        border: 0.5px solid black;
+        
+
+    }
+    .titleStatusTwo1920{
+        transform: rotate(270deg);
+        position: absolute;
+        margin-top: 680px;
+        margin-left: 410px;
+        width: 300px;
+        height: 50px;
+        text-align: center;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 32px;
+        line-height: 35px;
+      
+        color: #000000;
+        border-radius: 50px;
+        background-color: #D1D696;
+        text-align: center;
+        border: 0.5px solid black;
+    }
+/* Третья колнка class for input */
+    
+    .text1920{
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 35px;
+        
+        color: #000000;
+        box-shadow: 0px 4px 12px #423838;
+    }
+    input[type="text"]{
+        background: #EBE3CC;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 28px;
+        padding-left: 10px;
+
+        color: #000000;
+    }
+    input[type="date"]{
+        
+        padding-top: 8px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        
+        color: #000000;
+    }
+    ::-webkit-calendar-picker-indicator {
+        margin-top: 3px;
+        margin-left: -30px;
+        position: absolute;
+        color: transparent;
+        opacity: 1;
+        background: url(../image/svg/history.svg) no-repeat center;
+        background-size: contain;
+      }
+      
+    ::-webkit-clear-button {
+        opacity: 0;
+      }
+    ::-webkit-inner-spin-button {
+        opacity: 0;
+    }
+    /* button save free table */
+    .buttonFreeSave1920{
+        position: absolute;
+        width: 200px;
+        height: 40px;
+        margin-top: 460px;
+        margin-left: 1460px;
+        cursor: pointer;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 25px;
+        line-height: 35px;
+        
+        color: #000000;
+        border-radius: 50px;
+        background-color: #D1D696;
+        text-align: center;
+        border: 0.5px solid black;
+        
+    }
+    /* button save Pay table */
+    .buttonPaySave1920{
+        border: 0.5px solid black;
+        position: absolute;
+        width: 200px;
+        height: 40px;
+      
+        margin-top: 900px;
+        margin-left: 1460px;
+        pointer-events: none;
+
+        cursor: pointer;
+        border-radius: 50px;
+        background-color: #D1D696;
+
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 25px;
+        text-align: center;
+        line-height: 35px;
+        
+        color: #000000;
+
+    }
+    
 }
+    
