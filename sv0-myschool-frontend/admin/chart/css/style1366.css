@@ -1,0 +1,32 @@
+@media only screen and (min-width: 1300px) and (max-width: 1366px) {
+    .addUsersButton{
+        opacity: 0;
+    }
+    .historyButton{
+        opacity: 0;  
+    }
+    .chartButton{
+        opacity: 1;
+    }
+    .studentsButton{
+        opacity: 0; 
+    }
+    .settingsButton{
+        opacity: 0;
+    }
+    .outButton{
+        opacity: 0;
+    }
+    .container{
+        position: relative;
+        background-color:#EBE3CC;
+        width: 100%;
+        height: 100vh;
+    }
+    .rightBlock{
+        position: absolute;
+        margin-top: 4%;
+        margin-left: 33%;
+        width: 800px;
+    }
+}

@@ -3,43 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Авторизация</title>
+    <title>История</title>
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/style1440.css">
+    <link rel="stylesheet" href="./css/style1366.css">
     <link rel="stylesheet" href="./css/style1536.css">
     <link rel="stylesheet" href="./css/style1920.css">
+    <link rel="stylesheet" href="../css/css1366Menu.css">
+    <link rel="stylesheet" href="../css/css1536Menu.css">
+    <link rel="stylesheet" href="../css/css1920Menu.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 </head>
 <body>
-  
-</body>
-</html>
-
-
-
-</head>
-<body>
     <div class="container">
-        <div class="wrapper__title">
-            Stolovka.ru
+        <div class="leftBlock">
+            <img class="logo__img" src="./image/svg/logo 2.svg" alt="">
+            <div class="logo__title">Stolovka.ru</div>
+            <div class="teacher__logo" >Учитель</div>
+            <div class="menu">
+                <div class="addUser" href="#">
+                    <img class="menu__line1"src="./image/svg/Line 1.svg" alt="">
+                    <img src="./image/svg/add.svg" alt="" class="addUser__logo">
+                    <div href="#" class="addUser__title">
+                        Добавить<br>
+                        пользователя
+                    </div>
+                </div>
+                <div class="addUsersButton"></div>
+                <div class="history">
+                    <img class="menu__line2"src="./image/svg/Line 1.svg" alt="">
+                    <img src="./image/svg/history.svg" alt="" class="history__logo">
+                    <div class="history__title">История</div>
+                </div>
+                <div class="historyButton"></div>
+                <div class="chart">
+                    <img class="menu__line3"src="./image/svg/Line 1.svg" alt="">
+                    <img src="./image/svg/chart.svg" alt="" class="chart__logo">
+                    <div class="chart__title">График</div>
+                </div>
+                <div class="chartButton"></div>
+                <div class="students">
+                    <img class="menu__line4"src="./image/svg/Line 1.svg" alt="">
+                    <img src="./image/svg/students.svg" alt="" class="students__logo">
+                    <div class="students__title">Ученики</div>
+                    <img class="menu__line5"src="./image/svg/Line 1.svg" alt="">
+                </div>
+                <div class="studentsButton"></div>
+                <div class="settings">
+                    <img src="./image/svg/settings.svg" alt="" class="settings__logo">
+                    <div class="settings__title">Настройки</div>
+                </div>
+                <div class="settingsButton"></div>
+                <div class="out">
+                    <img src="./image/svg/out.svg" alt="" class="out__logo">
+                    <div class="out__title">Выход</div>
+                </div>
+                <div class="outButton"></div>
+            </div>
         </div>
-        <div class="header">
-            Авторизация
+        <div class="rigthBlock">
+            <div class="rightBlock__title">Ученики</div>
+            <input class="search" placeholder="Поиск" type="text"><img class="search__logo" src="./image/svg/search.svg" alt="">
+            <div class="resultSerch" id="resultSerch"></div>
         </div>
-        <input class="login" id="login">
-        <div class="login__header">Логин</div>
-        <div class="wrapper"></div>
-        <input class="password" id="password">
-        <div class="password__header">Пароль</div>
-        <input class="student__check" type="checkbox" name="student" value="users"><div class="student__title">Ученик</div>
-        <input class="teacher__check" type="checkbox" name="teacher" value="admin"><div class="teacher__title">Учитель</div>
-        <div class="button"></div>
-        <div class="button__header">Войти</div>
-
-        
     </div>
-    <script src="./js/checkInput.js"></script>
-    <script src="./js/authorization.js"></script>
+    <div class="modal" id="modal">
+        <div class="modalText">Вы точно хотите выйти?</div>
+        <div class="buttonFalse">Отмена</div>
+        <div class="buttonTrue">Выход</div>
+    </div>
+    <div class="modal-overlay"></div>
+    <script src="../js/click.js"></script>
+    <script src="../js/outClick.js"></script>
+    <script src="./js/buttonClick.js"></script>
 </body>
 
 </html>

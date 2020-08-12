@@ -36,7 +36,7 @@ $(document).ready(function(){
         let numberPhone = $('.numberPhone').val();
         let password = $('.password1').val();
         $.ajax({ 
-            url: "https://cooperative-universal-homegrown.glitch.me/api/v1/admin/createUser", 
+            url: "https://canteenbobrova.glitch.me/api/v1/admin/createUser", 
             //dataType: "json", // Для использования JSON формата получаемых данных
                method: "POST", // Что бы воспользоваться POST методом, меняем данную строку на POST   
             data: {

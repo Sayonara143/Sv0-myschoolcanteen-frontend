@@ -3,20 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Авторизация</title>
+    <title>График</title>
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/style1440.css">
+    <link rel="stylesheet" href="../css/css1366Menu.css">
+    <link rel="stylesheet" href="../css/css1536Menu.css">
+    <link rel="stylesheet" href="../css/css1920Menu.css">
+    <link rel="stylesheet" href="./css/style1366.css">
     <link rel="stylesheet" href="./css/style1536.css">
     <link rel="stylesheet" href="./css/style1920.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-</head>
-<body>
-  
-</body>
-</html>
-
-
-
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.bundle.js"></script> 
 </head>
 <body>
     <div class="container">
@@ -57,18 +54,74 @@
                     <img src="./image/svg/settings.svg" alt="" class="settings__logo">
                     <div class="settings__title">Настройки</div>
                 </div>
+                <div class="settingsButton"></div>
                 <div class="out">
                     <img src="./image/svg/out.svg" alt="" class="out__logo">
                     <div class="out__title">Выход</div>
                 </div>
+                <div class="outButton"></div>
             </div>
         </div>
-        <div class="rightBlock__title">Ученики</div>
-        <input class="search" placeholder="Поиск" type="text"> <img class="search__logo" src="./image/svg/search.svg" alt="">
-        <div class="resultSerch" id="resultSerch">
-
+        <div class="rightBlock">
+            <canvas class="myChart" id="myChart" width="11" height="8"></canvas>
         </div>
     </div>
+<script>
+var ctx = document.getElementById('myChart');
+var myChart = new Chart(ctx, {
+    type: 'line',
+    data: {
+        labels: ['1', '2', '3', '4', '5', '6 сентября', '7', '8', '9', '10', '11', '12 сентября', '13', '14','15', '16', '17', '18', '19', '20', '21', '22', '23', '24', '25', '26', '27', '28'],
+        datasets: [{
+            label: 'Бесплатники',
+            data: [2, 19, 3, 5, 2, 3],
+            backgroundColor: [
+                'rgba(0, 0, 0, 0)',
+            ],
+            borderColor: [
+                'rgba(255, 99, 132, 1)',
+                
+            ],
+            borderWidth: 3
+    
+        },
+        {
+            label: 'Платники',
+            data: [12, 4, 3, 5, 2, 3],
+            backgroundColor: [
+                'rgba(0, 0, 0, 0)',
+            ],
+            borderColor: [
+                'rgba(255, 189, 132, 1)',
+                
+            ],
+            borderWidth: 3
+    
+        }],
+    },
+        
+    options: {
+        responsive: true,
+        scales: {
+            yAxes: [{
+                ticks: {
+                    beginAtZero: true
+                }
+            }]
+        }
+    }
+    
+});
+
+</script>
+    <div class="modal" id="modal">
+        <div class="modalText">Вы точно хотите выйти?</div>
+        <div class="buttonFalse">Отмена</div>
+        <div class="buttonTrue">Выход</div>
+    </div>
+    <div class="modal-overlay"></div>
+    <script src="../js/click.js"></script>
+    <script src="../js/outClick.js"></script>
     <script src="./js/buttonClick.js"></script>
     <script src="./js/load.js"></script>
 </body>

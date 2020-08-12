@@ -9,15 +9,10 @@
     <link rel="stylesheet" href="./css/style1440.css">
     <link rel="stylesheet" href="./css/style1536.css">
     <link rel="stylesheet" href="./css/style1920.css">
+    <link rel="stylesheet" href="../css/css1366Menu.css">
+    <link rel="stylesheet" href="../css/css1536Menu.css">
+    <link rel="stylesheet" href="../css/css1920Menu.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-</head>
-<body>
-  
-</body>
-</html>
-
-
-
 </head>
 <body>
     <div class="container">
@@ -58,21 +53,28 @@
                     <img src="./image/svg/settings.svg" alt="" class="settings__logo">
                     <div class="settings__title">Настройки</div>
                 </div>
+                <div class="settingsButton"></div>
                 <div class="out">
                     <img src="./image/svg/out.svg" alt="" class="out__logo">
                     <div class="out__title">Выход</div>
                 </div>
+                <div class="outButton"></div>
             </div>
         </div>
-        <div class="rightBlock__title">Ученики</div>
-        <input class="search" placeholder="Поиск" type="text"> <img class="search__logo" src="./image/svg/search.svg" alt="">
-        <div class="resultSerch" id="resultSerch">
-
+        <div class="rigthBlock">
+            <div class="rightBlock__title">Ученики</div>
+            <input class="search" placeholder="Поиск" type="text"><img class="search__logo" src="./image/svg/search.svg" alt="">
+            <div class="resultSerch" id="resultSerch"></div>
         </div>
     </div>
-    <script src="./js/buttonClickHrefChart.js"></script>
-    <script src="./js/buttonClickHrefHistory.js"></script>
-    <script src="./js/buttonCliclkHrefAdd.js"></script>
+    <div class="modal" id="modal">
+        <div class="modalText">Вы точно хотите выйти?</div>
+        <div class="buttonFalse">Отмена</div>
+        <div class="buttonTrue">Выход</div>
+    </div>
+    <div class="modal-overlay"></div>
+    <script src="../js/click.js"></script>
+    <script src="../js/outClick.js"></script>
     <script src="./js/buttonClick.js"></script>
     <script src="./js/load.js"></script>
 </body>

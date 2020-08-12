@@ -1,0 +1,378 @@
+@media only screen and (min-width: 1500px) and (max-width: 1536px) {
+.teacher__logo{
+    position: absolute;
+    width: 160px;
+    height: 35px;
+    left:190px;
+    top: 120px;
+    padding-left: 25px;
+    z-index: 1;
+    background-color: #E15235;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 35px;
+
+    color: #000000;
+}
+.logo__title{
+    position: absolute;
+    width: 222px;
+    height: 40px;
+    left: 130px;
+    top: 60px;
+    z-index: 1;
+    font-family: Rationale;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 50px;
+    line-height: 58px;
+
+    color: #000000;
+
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.logo__img{
+    position: absolute;
+    left: 30px;
+    top: 18px;
+    z-index: 1;
+}
+.menu{
+    position: absolute;
+    width: 370px;
+    height: 100vh;
+    z-index: 0;
+
+    background: #EBE3CC;
+    box-shadow: 0px 4px 25px #695D55;
+}
+.menu__line1{
+    position: absolute;
+    z-index: 2;
+}
+.menu__line2{
+    position: absolute;
+    z-index: 2;
+}
+.menu__line3{
+    position: absolute;
+    z-index: 2;
+}
+.menu__line4{
+    position: absolute;
+    z-index: 2;
+}
+.menu__line5{
+    position: absolute;
+    z-index: 2;
+}
+.addUser{
+    position: absolute;
+    width: 300px;
+    height: 60px;
+    top: 240px;
+    left: 40px;
+    z-index: 3;
+}
+.addUser__title{
+    padding-top: calc((60px - 54px)/2);
+    padding-left: 90px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 26px;
+    line-height: 26px;
+
+    color: #000000;
+}
+.addUser__logo{
+    width: 57px;
+    height: 57px;
+    margin-top: calc((60px - 57px)/2);
+    position: absolute;
+    padding-left: 20px;
+}
+.history{
+    position: absolute;
+    height: 60px;
+    width: 300px;
+    top: 300px;
+    left: 40px;
+    z-index: 3;
+}
+.history__title{
+    padding-top: calc((60px - 28px)/2);
+    padding-left: 90px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 28px;
+
+    color: #000000;
+}
+.history__logo{
+    width: 57px;
+    height: 57px;
+    margin-top: calc((60px - 57px)/2);;
+    position: absolute;
+    padding-left: 20px;
+}
+.chart{
+    position: absolute;
+    height: 60px;
+    top: 360px;
+    width: 300px;
+    left: 40px;
+    z-index: 3;
+}
+.chart__title{
+    padding-top: calc((60px - 28px)/2);
+    padding-left: 90px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 28px;
+
+    color: #000000;
+}
+.chart__logo{
+    width: 57px;
+    height: 57px;
+    margin-top: calc((60px - 57px)/2);
+    position: absolute;
+    padding-left: 20px;
+}
+.students{
+    position: absolute;
+    height: 60px;
+    top: 420px;
+    width: 300px;
+    left: 40px;
+    z-index: 3;
+}
+.students__title{
+    padding-top: calc((60px - 28px)/2);
+    padding-left: 90px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 28px;
+
+    color: #000000;
+}
+.students__logo{
+    width: 57px;
+    height: 57px;
+    margin-top: calc((60px - 57px)/2);
+    position: absolute;
+    padding-left: 20px;
+}
+.menu__line5{
+    margin-top: calc((60px - 28px)/2);
+    
+}
+.historyButton{
+    position: absolute;
+    background-color: #C8A79E;
+    top: 305px;
+    left: 30px;
+    width: 304px;
+    height: 50px;
+    z-index: 1;
+}
+.chartButton{
+    position: absolute;
+    background-color: #C8A79E;
+    top: 365px;
+    left: 30px;
+    width: 304px;
+    height: 50px;
+    z-index: 1;
+}
+.studentsButton{
+    position: absolute;
+    background-color: #C8A79E;
+    top: 425px;
+    left: 30px;
+    width: 304px;
+    height: 50px;
+    z-index: 1;
+}
+ .addUsersButton{
+    position: absolute;
+    background-color: #C8A79E;
+    top: 244px;
+    left: 30px;
+    width: 304px;
+    height: 52px;
+    z-index: 1;
+}
+.settingsButton{
+    position: absolute;
+    background-color: #C8A79E;
+    top: 647px;
+    left: 30px;
+    width: 304px;
+    height: 40px;
+    z-index: 1;
+    
+    box-shadow: 0px 4px 10px #695D55;
+}
+.outButton{
+    position: absolute;
+    background-color: #C8A79E;
+    top: 696px;
+    left: 30px;
+    width: 304px;
+    height: 40px;
+    z-index: 1;
+    background: #C8A79E;
+    box-shadow: 0px 4px 10px #695D55;
+}
+.settings{
+    height: 50px;
+    position: absolute;
+    top: 640px;
+    left:50px;
+    width: 300px;
+    z-index: 2;
+}
+.settings__logo{
+    margin-left: 10px;
+    margin-top: 10px;
+    width: 37px;
+    height: 37px;
+    position: absolute;
+    z-index: 2;
+}
+.settings__title{
+    margin-top: 10px;
+    margin-left: 65px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 28px;
+    z-index: 2;
+    color: #000000;
+}
+.out{
+    position: absolute;
+    top: 690px;
+    width: 300px;
+    left:50px;
+    height: 50px;
+    z-index: 2;
+}
+.out__logo{
+    margin-left: 10px;
+    margin-top: 10px;
+    width: 37px;
+    height: 37px;
+    position: absolute;
+}
+.out__title{
+    margin-top: 10px;
+    margin-left: 65px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 28px;
+
+    color: #000000;
+}
+.modal{
+    background-color: #EBE3CC;
+    z-index: 10000;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    height: 200px;
+    display: none;
+    border-radius: 15px;
+
+}
+.buttonFalse{
+    cursor: pointer;
+    position: fixed;
+    width: 200px;
+    height: 50px;
+    left:25%;
+    top: 70%;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(180deg, #FFC700 0%, #FFB039 100%);
+    box-shadow: 0px 5px 5px rgba(243, 209, 38, 0.25);
+    border-radius: 5px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 40px;
+    text-align: center;
+
+    color: #000000;
+}
+.buttonFalse:hover{
+    background: linear-gradient(180deg, #FFC700 80%, #FFB039 100%);
+}
+.buttonTrue{
+    cursor: pointer;
+    transform: translate(-50%, -50%);
+    left:75%;
+    top: 70%;
+    position: fixed;
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    background: linear-gradient(180deg, #FFC700 0%, #FFB039 100%);
+    box-shadow: 0px 5px 5px rgba(243, 209, 38, 0.25);
+    border-radius: 5px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 40px;
+
+    color: #000000;
+}
+.buttonTrue:hover{
+    background: linear-gradient(180deg, #FFC700 80%, #FFB039 100%);
+}
+
+
+
+.modalText{
+    left:50%;
+    transform: translate(-50%, 90%);
+    width: 350px;
+    position: fixed;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 28px;
+
+    color: #000000;
+}
+.modal-overlay{
+    background-color: #7B6D57;
+    width: 100%;
+    height: 100%;
+    display: none;
+    z-index: 1000;
+    position: fixed;
+    top:0;
+    left:0;
+    opacity: 0.7;
+}
+}

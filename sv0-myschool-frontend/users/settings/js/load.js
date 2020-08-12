@@ -1,14 +1,14 @@
 $(document).ready(function(){   
     let url_image;
     $.ajax({ 
-        url: "https://cooperative-universal-homegrown.glitch.me/api/v1/users/settings", 
+        url: "https://canteenbobrova.glitch.me/api/v1/users/settings", 
         //dataType: "json", // Для использования JSON формата получаемых данных
        	method: "GET", // Что бы воспользоваться POST методом, меняем данную строку на POST   
         data: {},
         headers: {"Authorization" : "Authorization" +' '+ localStorage.accessToken},
         success: function (data){
             console.log(data);
-            url_image = "https://cooperative-universal-homegrown.glitch.me/"+ data.path;
+            url_image = "https://canteenbobrova.glitch.me/"+ data.path;
             $(".changeName__value").text(data.surname +" "+ data.name + " " + data.patronymic);
             $(".changeEmail__value").text(data.email);
             $(".changePhone__value").text(data.phone);

@@ -14,8 +14,14 @@
     <link rel="stylesheet" href="./css/style1920.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="./js/buttonClick.js"></script>
-    <script src="./js/load.js"></script>
+    <script type="module" src="./js/load.js"></script>
     <script src="../js/click.js"></script>
+    <script src="../js/outClick.js"></script>
+    <script src="./js/clickChangeEmail.js"></script>
+    <script src="./js/clickChangeNumberPhone.js"></script>
+    <script src="./js/clickChangePassword.js"></script>
+    <script src="./js/clickChangeAvatarDelete.js"></script>
+    <script src="./js/clickChangeAvatarChange.js"></script>
 </head>
 <body>
     <div class="container">
@@ -86,6 +92,13 @@
             <div class="textUpdate">Изменить фотографию профиля</div>
         </div>
     </div>
+   
+    <div class="modal" id="modal">
+        <div class="modalText">Вы точно хотите выйти?</div>
+        <div class="buttonFalse">Отмена</div>
+        <div class="buttonTrue">Выход</div>
+    </div>
+    <div class="modal-overlay"></div>
 </body>
 
 </html>
